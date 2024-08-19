@@ -1,33 +1,59 @@
-.navbar {
+.hero-section {
+    position: relative;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-  }
-  
-  .logo a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  
-  .nav-links {
-    list-style: none;
+    background: url('../../assets/hotel.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden; /* Ensures no overflow from the pseudo-element */
+}
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Adjust the rgba value to control the lightening effect */
+    z-index: 1;
+}
+.container {
+    position: relative; /* Make sure container is positioned above the pseudo-element */
     display: flex;
-    gap: 15px;
-  }
-  
-  .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 7px 14px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-  }
-  
-  .nav-links li a:hover {
-    background-color: #555;
-  }
-  
+    align-items: center;
+    z-index: 2; /* Ensures container is above the overlay */
+}
+
+.logo {
+    max-width: 220px;
+    margin-bottom: 500px;
+    margin-left: -570px;
+}
+
+.first-line {
+    display: block;
+}
+
+.second-line {
+    display: block;
+}
+
+h1 {
+    color: #0b3360;
+    font-size: 5.5rem;
+    margin-bottom: 100px;
+    margin-left: -220px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .logo {
+        max-width: 120px;
+    }
+}
