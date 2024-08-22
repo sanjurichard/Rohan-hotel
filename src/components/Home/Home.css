@@ -1,13 +1,22 @@
+
+
 .hero-section {
     position: relative;
     height: 100vh;
+    width: 100vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('../../assets/hotel.jpg') no-repeat center center;
+    justify-content: flex-start;
+    /* Align items to the left */
+    align-items: flex-start;
+    /* Align items to the top */
+    background: url('../../assets/image 7.png') no-repeat center center;
     background-size: cover;
-    overflow: hidden; /* Ensures no overflow from the pseudo-element */
+    overflow: hidden;
+    padding: 20px;
+    /* Padding to add some space from the edges */
+    
 }
+
 .hero-section::before {
     content: '';
     position: absolute;
@@ -15,37 +24,43 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.3); /* Adjust the rgba value to control the lightening effect */
+    background: rgba(255, 255, 255, 0.3);
     z-index: 1;
 }
+
 .container {
-    position: relative; /* Make sure container is positioned above the pseudo-element */
+    position: relative;
     display: flex;
-    align-items: center;
-    z-index: 2; /* Ensures container is above the overlay */
+    flex-direction: column;
+    align-items: flex-start;
+    /* Align content to the left */
+    z-index: 2;
+    text-align: left;
+    /* Align text to the left */
+    padding: 20px;
+    /* Additional padding if needed */
+    margin-left: 80px;
 }
 
 .logo {
     max-width: 220px;
-    margin-bottom: 500px;
-    margin-left: -570px;
-}
-
-.first-line {
-    display: block;
-}
-
-.second-line {
-    display: block;
+    margin-bottom: 45px;
+    /* Adjust margin as needed */
 }
 
 h1 {
     color: #0b3360;
     font-size: 5.5rem;
-    margin-bottom: 100px;
-    margin-left: -220px;
+    margin: 0;
+    /* Remove default margin */
     font-weight: bold;
     line-height: 1.2;
+    margin-top: 55px;
+
+}
+
+.first-line {
+    display: block;
 }
 
 @media (max-width: 768px) {
@@ -54,6 +69,218 @@ h1 {
     }
 
     .logo {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .logo {
         max-width: 120px;
     }
+}
+
+.reservation-section {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    padding: 20px;
+    min-height: 100vh; /* Ensure the section takes up the full viewport height */
+}
+
+.reservation-form {
+    flex: 1;
+    padding: 20px;
+    max-width: 500px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    text-align: left; /* Ensure text alignment is left */
+}
+
+.reservation-form h2 {
+    font-size: 2.9rem;
+    margin-bottom: 10px;
+}
+
+.reservation-form p {
+    font-size: 1.5rem;
+}
+
+.reservation-form .offer {
+    color: #003366;
+    font-weight: bold;
+}
+
+.reservation-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation-form label {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 3px;
+    color: #121212;
+}
+
+.para {
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.reservation-form input {
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #dad8d8;
+    border-radius: 7px;
+    padding-left: 40px;
+    color: #ccc;
+    font-size: 1.2rem;
+    width: 100%; /* Ensure the input fields take full width */
+    box-sizing: border-box; /* Include padding and border in width */
+    margin-bottom: 25px;
+    height: 50px;
+}
+
+.date-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    margin-top: 15px;
+
+}
+
+.date-field {
+    flex: 1;
+
+}
+
+.reservation-image {
+    flex: 1;
+    max-width: 500px; /* Limit the image width */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.reservation-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .reservation-section {
+        flex-direction: column;
+        align-items: center; /* Ensure everything is centered in smaller screens */
+    }
+
+    .reservation-form,
+    .reservation-image {
+        max-width: 100%; /* Allow form and image to take full width on small screens */
+    }
+
+    .reservation-image {
+        margin-top: 20px;
+    }
+}
+
+
+
+/* Styles for the widget container */
+.widget-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    margin-top: 15px;
+    
+}
+
+.counter {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.counter-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.counter-controls button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.counter-controls span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Button style */
+.reserve-button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 35px;
+    font-size: 1.2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .widget-container {
+        flex-direction: column;
+    }
+}
+
+.input-icon-wrapper {
+    position: relative;
+    width: 100%;
+    
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 10px; /* Adjust based on preference */
+    color: #ccc;
+    margin-top: 24px;
+  }
+
+
+  .date-picker-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.date-picker-input {
+    padding-right: 30px; /* Add padding to make space for the icon */
+}
+
+.date-picker-icon {
+    position: absolute;
+    left: 10px;
+    font-size: 1.2rem;
+    color: #888888; /* Change color as needed */
+    margin-bottom: 15px;
+
 }
