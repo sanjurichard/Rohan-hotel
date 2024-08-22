@@ -1,20 +1,15 @@
-
-
+/* Hero Section */
 .hero-section {
     position: relative;
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: flex-start;
-    /* Align items to the left */
     align-items: flex-start;
-    /* Align items to the top */
     background: url('../../assets/image 7.png') no-repeat center center;
     background-size: cover;
     overflow: hidden;
     padding: 20px;
-    /* Padding to add some space from the edges */
-    
 }
 
 .hero-section::before {
@@ -33,70 +28,66 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* Align content to the left */
     z-index: 2;
     text-align: left;
-    /* Align text to the left */
     padding: 20px;
-    /* Additional padding if needed */
     margin-left: 80px;
 }
 
 .logo {
     max-width: 220px;
     margin-bottom: 45px;
-    /* Adjust margin as needed */
 }
 
+/* Hero Text */
 h1 {
     color: #0b3360;
     font-size: 5.5rem;
     margin: 0;
-    /* Remove default margin */
     font-weight: bold;
     line-height: 1.2;
     margin-top: 55px;
-
 }
 
 .first-line {
     display: block;
 }
 
+/* Media Query for Tablets */
 @media (max-width: 768px) {
     h1 {
         font-size: 3rem;
     }
-
     .logo {
         max-width: 150px;
     }
 }
 
+/* Media Query for Mobile */
 @media (max-width: 480px) {
     h1 {
         font-size: 2.5rem;
     }
-
     .logo {
         max-width: 120px;
     }
 }
 
+/* Reservation Section */
 .reservation-section {
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    min-height: 100vh; /* Ensure the section takes up the full viewport height */
+    min-height: 100vh;
 }
 
 .reservation-form {
     flex: 1;
     padding: 20px;
-    max-width: 500px; /* Limit the width of the form */
-    margin: 0 auto; /* Center the form horizontally */
-    text-align: left; /* Ensure text alignment is left */
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .reservation-form h2 {
@@ -140,29 +131,47 @@ h1 {
     padding-left: 40px;
     color: #ccc;
     font-size: 1.2rem;
-    width: 100%; /* Ensure the input fields take full width */
-    box-sizing: border-box; /* Include padding and border in width */
+    width: 100%;
+    box-sizing: border-box;
     margin-bottom: 25px;
     height: 50px;
 }
 
+/* Date Fields */
 .date-fields {
     display: flex;
     justify-content: space-between;
     gap: 35px;
     margin-top: 15px;
-
 }
 
 .date-field {
     flex: 1;
-
 }
 
+.date-picker-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.date-picker-input {
+    padding-right: 30px;
+}
+
+.date-picker-icon {
+    position: absolute;
+    left: 10px;
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+/* Reservation Image */
 .reservation-image {
     flex: 1;
-    max-width: 500px; /* Limit the image width */
-    margin: 0 auto; /* Center the image horizontally */
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .reservation-image img {
@@ -172,31 +181,26 @@ h1 {
     object-fit: cover;
 }
 
+/* Media Query for Tablets */
 @media (max-width: 768px) {
     .reservation-section {
         flex-direction: column;
-        align-items: center; /* Ensure everything is centered in smaller screens */
+        align-items: center;
     }
-
-    .reservation-form,
-    .reservation-image {
-        max-width: 100%; /* Allow form and image to take full width on small screens */
+    .reservation-form, .reservation-image {
+        max-width: 100%;
     }
-
     .reservation-image {
         margin-top: 20px;
     }
 }
 
-
-
-/* Styles for the widget container */
+/* Widget Container */
 .widget-container {
     display: flex;
     justify-content: space-between;
     gap: 35px;
     margin-top: 15px;
-    
 }
 
 .counter {
@@ -232,7 +236,7 @@ h1 {
     font-weight: bold;
 }
 
-/* Button style */
+/* Reserve Button */
 .reserve-button {
     background-color: #003366;
     color: white;
@@ -246,41 +250,15 @@ h1 {
     box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-    .widget-container {
-        flex-direction: column;
-    }
-}
-
+/* Input Icon Wrapper */
 .input-icon-wrapper {
     position: relative;
     width: 100%;
-    
-  }
-  
-  .input-icon {
-    position: absolute;
-    left: 10px; /* Adjust based on preference */
-    color: #ccc;
-    margin-top: 24px;
-  }
-
-
-  .date-picker-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
 }
 
-.date-picker-input {
-    padding-right: 30px; /* Add padding to make space for the icon */
-}
-
-.date-picker-icon {
+.input-icon {
     position: absolute;
     left: 10px;
-    font-size: 1.2rem;
-    color: #888888; /* Change color as needed */
-    margin-bottom: 15px;
-
+    color: #ccc;
+    margin-top: 24px;
 }
