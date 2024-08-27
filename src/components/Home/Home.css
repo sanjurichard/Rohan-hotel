@@ -69,7 +69,7 @@ h1 {
         font-size: 2.5rem;
     }
     .logo {
-        max-width: 120px;
+        max-width: 150px;
     }
 }
 
@@ -262,3 +262,167 @@ h1 {
     color: #ccc;
     margin-top: 24px;
 }
+
+
+.title {
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #141414;
+  
+}
+.home-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.image-grid-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.large-image-container {
+    flex: 2;
+    margin: 0;
+}
+
+.large-image {
+    width: 85%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.small-images-container {
+    flex: 1.8;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.small-image-row {
+    display: flex;
+    gap: 28px;
+}
+
+.small-image {
+    width: 98%;
+    height: 88%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-grid-wrapper {
+        flex-direction: column;
+    }
+
+    .large-image-container, .small-images-container {
+        width: 100%;
+    }
+
+    .small-image-row {
+        flex-direction: column;
+    }
+
+    .small-image {
+        margin-bottom: 20px;
+    }
+}
+
+
+.comparison-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #e0ebf5;
+    border-radius: 8px;
+  }
+  
+  .comparison-text {
+    width: 35%;
+    font-family: 'Arial', sans-serif;
+    margin-top: 134px;
+  }
+  
+  .comparison-text h1 {
+    font-size: 68px;
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  .comparison-text p {
+    font-size: 26px;
+    color: #666;
+  }
+  
+  .comparison-list {
+    width: 53%;
+    border: 1px solid #003366; /* Adds a square border */
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #ffffff; 
+  }
+  
+  .partner-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .partner-info {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+  
+  .partner-logo {
+    width: 27px;
+    height: 27px;
+    margin-right: 10px;
+  }
+  
+  .partner-details h2 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .partner-details p {
+    margin: 5px 0 0 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .partner-price {
+    text-align: right;
+  }
+  
+  .partner-price p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .partner-price button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .partner-price button:hover {
+    background-color: #0056b3;
+  }
