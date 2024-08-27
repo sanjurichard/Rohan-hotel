@@ -338,6 +338,7 @@ h1 {
 }
 
 
+
 .comparison-container {
     display: flex;
     justify-content: space-between;
@@ -365,8 +366,10 @@ h1 {
   
   .comparison-list {
     width: 53%;
-    border: 1px solid #003366; /* Adds a square border */
+    border: 1px solid #bcbaba; /* Adds a square border */
   padding: 10px;
+  display: flex;
+  flex-direction: column;
   border-radius: 20px;
   background-color: #ffffff; 
   }
@@ -426,3 +429,77 @@ h1 {
   .partner-price button:hover {
     background-color: #0056b3;
   }
+
+
+
+
+
+
+
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .comparison-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+    
+    .comparison-text {
+      width: 100%;
+      margin-top: 20px;
+      text-align: center;
+    }
+    
+    .comparison-text h1 {
+      font-size: 36px;
+    }
+    
+    .comparison-text p {
+      font-size: 18px;
+    }
+    
+    .comparison-list {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 23px;
+    }
+    
+    .partner-item {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .partner-info {
+      margin-bottom: 10px;
+    }
+    
+    .partner-logo {
+      width: 20px;
+      height: 20px;
+    }
+    
+    .partner-details h2 {
+      font-size: 1rem;
+    }
+    
+    .partner-details p {
+      font-size: 0.8rem;
+    }
+    
+    .partner-price p {
+      font-size: 1rem;
+    }
+    
+    .partner-price button {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  
+
+  

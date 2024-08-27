@@ -11,7 +11,7 @@ import cleartrip from '../../assets/cleartrip.png';
 import agoda from '../../assets/agoda.png';
 import booking from '../../assets/booking.png';
 import expedia from '../../assets/expedia.jpg';
-import goibo from '../../assets/goibo.png';
+import goibibo from '../../assets/goibo.png';
 import hotels from '../../assets/hotels.png';
 import mmtrip from '../../assets/mmtrip.png';
 import transadvisor from '../../assets/tranadvisor.png';
@@ -49,16 +49,16 @@ const Home = () => {
 
     const partners = [
         { name: 'Cleartrip.com', price: '₹2,160', cancellation: 'Free cancellation until 11 Jun', url: 'https://www.cleartrip.com', imgSrc: cleartrip },
-        { name: 'Goibibo.com', price: '₹2,398', cancellation: 'Free cancellation until 11 Jun',imgSrc: goibo },
-        { name: 'Agoda', price: '₹2,419', cancellation: 'Free cancellation until 10 Jun',imgSrc: agoda  },
-        { name: 'MakeMyTrip.com', price: '₹2,489', cancellation: 'Free cancellation until 11 Jun',imgSrc: mmtrip  },
-        { name: 'Tripadvisor.in', price: '₹2,419', cancellation: 'Free cancellation until 10 Jun' ,imgSrc: transadvisor },
-        { name: 'Vio.com', price: '₹2,419', cancellation: 'Free cancellation until 11 Jun',imgSrc: vio  },
-        { name: 'Booking.com', price: '₹3,427', cancellation: 'Free cancellation until 9 Jun',imgSrc: booking  },
-        { name: 'Hotels.com', price: '₹2,846', cancellation: 'Free cancellation until 11 Jun' ,imgSrc: hotels },
-        { name: 'Expedia.co.in', price: '₹2,846', cancellation: 'Free cancellation until 11 Jun' ,imgSrc: expedia },
-        { name: 'Trip.com', price: '₹3,698', cancellation: 'Free cancellation until 11 Jun',imgSrc: trip },
-        { name: 'HomeToGo.com', price: '₹2,568', cancellation: 'Free cancellation until 11 Jun',imgSrc: htg },
+        { name: 'Goibibo.com', price: '₹2,398', cancellation: 'Free cancellation until 11 Jun', url: 'https://www.goibibo.com', imgSrc: goibibo },
+        { name: 'Agoda', price: '₹2,419', cancellation: 'Free cancellation until 10 Jun', url: 'https://www.agoda.com', imgSrc: agoda },
+        { name: 'MakeMyTrip.com', price: '₹2,489', cancellation: 'Free cancellation until 11 Jun', url: 'https://www.makemytrip.com', imgSrc: mmtrip },
+        { name: 'Tripadvisor.in', price: '₹2,419', cancellation: 'Free cancellation until 10 Jun', url: 'https://www.tripadvisor.in', imgSrc: transadvisor },
+        { name: 'Vio.com', price: '₹2,419', cancellation: 'Free cancellation until 11 Jun', url: 'https://www.vio.com', imgSrc: vio },
+        { name: 'Booking.com', price: '₹3,427', cancellation: 'Free cancellation until 9 Jun', url: 'https://www.booking.com', imgSrc: booking },
+        { name: 'Hotels.com', price: '₹2,846', cancellation: 'Free cancellation until 11 Jun', url: 'https://www.hotels.com', imgSrc: hotels },
+        { name: 'Expedia.co.in', price: '₹2,846', cancellation: 'Free cancellation until 11 Jun', url: 'https://www.expedia.co.in', imgSrc: expedia },
+        { name: 'Trip.com', price: '₹3,698', cancellation: 'Free cancellation until 11 Jun', url: 'https://www.trip.com', imgSrc: trip },
+        { name: 'HomeToGo.com', price: '₹2,568', cancellation: 'Free cancellation until 11 Jun',url: 'https://www.Hometogo.com',imgSrc: htg },
     ];
 
     return (
