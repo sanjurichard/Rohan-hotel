@@ -468,7 +468,7 @@ h1 {
     
     .partner-item {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       padding: 15px;
       width: 100%;
       margin-bottom: 10px;
