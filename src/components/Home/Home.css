@@ -283,6 +283,7 @@ h1 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+
 }
 
 .large-image-container {
@@ -503,3 +504,129 @@ h1 {
   
 
   
+  
+  .large-image1 {
+    width: 90%;
+    height: 52%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.small-images-container1 {
+    flex: 1.8;
+    display: flex;
+    flex-direction: column;
+    margin-right: 155px;
+}
+
+.small-image7 {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.small-image9 {
+    width: 100%;
+    height: 97%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.small-image8 {
+    width: 100%;
+    height: 72%;
+    margin-top: -116px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.small-image10 {
+    width: 100%;
+    height: 97%;
+    object-fit: cover;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.small-image12{
+    width: 91%;
+    height: 95%;
+    margin-top: -220px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.small-image11{
+    width: 100%;
+    height: 95%;
+    margin-left: -530px;
+    margin-top: -355px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.image-grid-wrapper1 {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-left: -100px;
+}
+
+@media (max-width: 768px) {
+    .image-grid-wrapper1 {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .large-image1 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .small-images-container1 {
+        margin-right: 0;
+    }
+
+    .small-image7,
+    .small-image9,
+    .small-image8,
+    .small-image10,
+    .small-image12,
+    .small-image11 {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .large-image1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .small-image7,
+    .small-image9,
+    .small-image8,
+    .small-image10,
+    .small-image12,
+    .small-image11 {
+        width: 100%;
+        height: auto;
+        margin: 5px 0;
+    }
+
+    .image-grid-wrapper1 {
+        padding: 10px;
+    }
+}

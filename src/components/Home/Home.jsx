@@ -6,6 +6,13 @@ import image2 from '../../assets/2.png';
 import image3 from '../../assets/3.png';
 import image4 from '../../assets/4.png';
 import image5 from '../../assets/5-1.png';
+import image6 from '../../assets/Rectangle 27.png';
+import image7 from '../../assets/Rectangle 28.png';
+import image8 from '../../assets/Rectangle 29.png';
+import image9 from '../../assets/Rectangle 30.png';
+import image10 from '../../assets/Rectangle 31.png';
+import image11 from '../../assets/Rectangle 33.png';
+import image12 from '../../assets/Rectangle 32.png';
 import resrev from '../../assets/rohanreserv.png';
 import cleartrip from '../../assets/cleartrip.png';
 import agoda from '../../assets/agoda.png';
@@ -58,7 +65,7 @@ const Home = () => {
         { name: 'Hotels.com', price: '₹2,846', cancellation: 'Free cancellation until 11 Jun', url: 'https://www.hotels.com', imgSrc: hotels },
         { name: 'Expedia.co.in', price: '₹2,846', cancellation: 'Free cancellation until 11 Jun', url: 'https://www.expedia.co.in', imgSrc: expedia },
         { name: 'Trip.com', price: '₹3,698', cancellation: 'Free cancellation until 11 Jun', url: 'https://www.trip.com', imgSrc: trip },
-        { name: 'HomeToGo.com', price: '₹2,568', cancellation: 'Free cancellation until 11 Jun',url: 'https://www.Hometogo.com',imgSrc: htg },
+        { name: 'HomeToGo.com', price: '₹2,568', cancellation: 'Free cancellation until 11 Jun', url: 'https://www.Hometogo.com', imgSrc: htg },
     ];
 
     return (
@@ -197,6 +204,37 @@ const Home = () => {
                     ))}
                 </div>
             </div>
+
+
+            <div className="home-container">
+                <h2 className='title'>Gallery.</h2>
+                <div className="image-grid-wrapper1">
+                    <div className="large-image-container">
+                        <img src={image6} alt="Image 5" className="large-image1" />
+                    </div>
+                    <div className="small-images-container1">
+                        <div className="small-image-row">
+                            <img src={image7} alt="Image 1" className="small-image7" />
+                            <img src={image9} alt="Image 2" className="small-image9" />
+
+                        </div>
+                        <div className="small-image-row">
+                            <img src={image8} alt="Image 3" className="small-image8" />
+                            <img src={image10} alt="Image 4" className="small-image10" />
+
+                        </div>
+                       
+                        <img src={image12} alt="Image 2" className="small-image12" />
+                        <img src={image11} alt="Image 2" className="small-image11" />
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
 
         </div>
     );
