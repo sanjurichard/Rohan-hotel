@@ -54,6 +54,34 @@ const Home = () => {
         }
     };
 
+    const testimonials = [
+        {
+            name: "Priya Sharma",
+            role: "Software Engineer",
+            review: "I recently stayed at the Rohaan Inns Hotel for a weekend getaway and it exceeded my expectations. From the moment I arrived, the staff was incredibly welcoming and attentive.",
+            image: "https://via.placeholder.com/50", // Replace with your image URL
+        },
+        {
+            name: "Ananya",
+            role: "Marketing Manager",
+            review: "My stay at the Oceanview Resort was wonderful. The hotel's location is perfect, just a short walk from the beach and close to many restaurants and shops.",
+            image: "https://via.placeholder.com/50", // Replace with your image URL
+        },
+        {
+            name: "Ananya",
+            role: "Marketing Manager",
+            review: "My stay at the Oceanview Resort was wonderful. The hotel's location is perfect, just a short walk from the beach and close to many restaurants and shops.",
+            image: "https://via.placeholder.com/50", // Replace with your image URL
+        },
+        {
+            name: "Ananya",
+            role: "Marketing Manager",
+            review: "My stay at the Oceanview Resort was wonderful. The hotel's location is perfect, just a short walk from the beach and close to many restaurants and shops.",
+            image: "https://via.placeholder.com/50", // Replace with your image URL
+        },
+    ];
+
+
     const partners = [
         { name: 'Cleartrip.com', price: '₹2,160', cancellation: 'Free cancellation until 11 Jun', url: 'https://www.cleartrip.com', imgSrc: cleartrip },
         { name: 'Goibibo.com', price: '₹2,398', cancellation: 'Free cancellation until 11 Jun', url: 'https://www.goibibo.com', imgSrc: goibibo },
@@ -161,24 +189,63 @@ const Home = () => {
                     <img src={resrev} alt="Rohaan Hotels Logo" />
                 </div>
             </section>
+
+
             <div className="home-container">
                 <h2 className='title'>Our Rooms</h2>
                 <div className="image-grid-wrapper">
                     <div className="large-image-container">
-                        <img src={image5} alt="Image 5" className="large-image" />
+                        <div className="image-wrapper ">
+                            <img src={image5} alt="Image 5" className="large-image" />
+                            <div className="overlay">
+                                <h2 className="room-title">Double Room</h2>
+                                <div className="room-details">
+                                    <div className="detail-item">
+                                        <i className="fas fa-user-friends"></i> {/* Use Font Awesome or custom SVG */}
+                                        <span>Adults</span>
+                                        <span>2</span>
+                                    </div>
+                                    <div className="detail-item">
+                                        <i className="fas fa-child"></i> {/* Use Font Awesome or custom SVG */}
+                                        <span>Kids</span>
+                                        <span>2</span>
+                                    </div>
+                                    <div className="detail-item">
+                                        <i className="fas fa-bed"></i> {/* Use Font Awesome or custom SVG */}
+                                        <span>Queen Size</span>
+                                    </div>
+                                    <div className="detail-item">
+                                        <span>120 Sq. Ft.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="small-images-container">
                         <div className="small-image-row">
-                            <img src={image1} alt="Image 1" className="small-image" />
-                            <img src={image2} alt="Image 2" className="small-image" />
+                            <div className="image-wrapper">
+                                <img src={image1} alt="Image 1" className="small-image" />
+                                <div className="image-text ">Text for Image 1</div>
+                            </div>
+                            <div className="image-wrapper">
+                                <img src={image2} alt="Image 2" className="small-image" />
+                                <div className="image-text ">Text for Image 2</div>
+                            </div>
                         </div>
                         <div className="small-image-row">
-                            <img src={image3} alt="Image 3" className="small-image" />
-                            <img src={image4} alt="Image 4" className="small-image" />
+                            <div className="image-wrapper">
+                                <img src={image3} alt="Image 3" className="small-image" />
+                                <div className="image-text ">Text for Image 3</div>
+                            </div>
+                            <div className="image-wrapper">
+                                <img src={image4} alt="Image 4" className="small-image" />
+                                <div className="image-text ">Text for Image 4</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <div className="comparison-container">
                 <div className="comparison-text">
@@ -223,7 +290,7 @@ const Home = () => {
                             <img src={image10} alt="Image 4" className="small-image10" />
 
                         </div>
-                       
+
                         <img src={image12} alt="Image 2" className="small-image12" />
                         <img src={image11} alt="Image 2" className="small-image11" />
                     </div>
@@ -232,9 +299,48 @@ const Home = () => {
             </div>
 
 
-
-
-
+            <section className="reviews-reviews-titlesection">
+                <h1 className="reviews-title">Reviews from Our Happy Customers</h1>
+                <p className="reviews-subtitle">
+                    Discover why our customers love us! Read their glowing reviews and see
+                    how we’ve exceeded their expectations with our exceptional service and
+                    high-quality offerings.
+                </p>
+                <div className="reviews-container">
+                    {testimonials.map((testimonial, index) => (
+                        <div key={index} className="review-card">
+                            <div className="review-header">
+                                <img
+                                    src={testimonial.image}
+                                    alt={`${testimonial.name}'s profile`}
+                                    className="review-image"
+                                />
+                                <div>
+                                    <h3 className="review-name">{testimonial.name}</h3>
+                                    <p className="review-role">{testimonial.role}</p>
+                                </div>
+                            </div>
+                            <p className="review-text">{testimonial.review}</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+            <br>
+            </br>
+            <br>
+            </br>
+            <br>
+            </br>
+            <div className="hero-sectionfooter">
+                <div className="hero-content">
+                    <h1 className="hero-title">Experience Luxury and Comfort in the Heart of the City</h1>
+                    <p className="hero-description">
+                        Book your stay today and enjoy world-class amenities, exquisite dining, and exceptional service.
+                        Whether you're here for business or leisure, Rohaan Hotels promises a memorable and delightful experience.
+                    </p>
+                    <button className="hero-button">Contact Us</button>
+                </div>
+            </div>
 
         </div>
     );
